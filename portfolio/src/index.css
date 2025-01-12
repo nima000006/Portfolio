@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --theme-color: #28a745; /* Default green-500 */
+}
+
+/* Tailwind utilities using the theme color */
+.bg-theme {
+  background-color: var(--theme-color);
+}
+.hover\:bg-theme:hover {
+  background-color: var(--theme-color);
+}
+.text-theme {
+  color: var(--theme-color);
+}
+.border-theme{
+  border-color: var(--theme-color)
+}
+
+body{
+  font-family: "Roboto Mono", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: var(--theme-color);
+}
+
+::selection {
+  color: white;
+  background: var(--theme-color);
+}
