@@ -48,7 +48,7 @@ function FilterableGallery() {
       : sampleData.filter((item) => item.category === filter);
 
   return (
-    <div className="p-8 bg-gray-900 min-h-screen">
+    <div className="p-8 bg-gray-900 min-h-screen h-full">
       {/* Filter Buttons */}
       <div className="flex gap-6 justify-center text-gray-300 mb-6">
         {["All", "Book store", "Infomation of books", "Introduction"].map(

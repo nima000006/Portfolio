@@ -6,18 +6,13 @@ import ThemeColorSettings from "../component/ThemeColorSettings";
 
 function AppLayout() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-[250px_auto] h-screen">
-      <aside className="bg-gray-800 text-white p-4">
+    <div className="grid grid-cols-1 lg:grid-cols-[250px_auto] h-screen">
         <SlideBar />
-      </aside>
 
       <main className="bg-gray-100 overflow-auto">
         <Outlet />
       </main>
-      {createPortal(
-        <ThemeColorSettings/>,
-        document.body
-      )}
+      {createPortal(<ThemeColorSettings />, document.body)}
     </div>
   );
 }

@@ -10,11 +10,11 @@ const analytics = [
 ];
 function About() {
   return (
-    <div className="relative bg-slate-900  w-full px-10">
+    <div className="relative bg-slate-900  w-full min-h-screen  px-10">
       <DynamicTitle backText={"ABOUT ME"} title={"Know Me More"} />
       <div className="grid grid-cols-1 md:grid-cols-5 gap-4 p-6 mt-16 z-20">
         <div className="col-span-3 z-20">
-          <h2 className="text-2xl font-bold mb-3 text-justify text-slate-200">
+          <h2 className="text-2xl font-bold mb-3  text-slate-200">
             I&apos;m <span className="text-theme">Nima Ch</span>, a Web
             Developer
           </h2>
@@ -68,7 +68,7 @@ function About() {
           </button>
         </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6 ">
         {analytics.map((item) => (
           <Analytics key={item.title} number={item.number} title={item.title} />
         ))}

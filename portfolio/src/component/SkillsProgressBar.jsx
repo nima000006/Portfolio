@@ -16,7 +16,7 @@ function SkillsProgressBar() {
   return (
     <div className="p-5 w-full z-20 relative">
       <p className="text-green-50 font-semibold text-2xl mb-5">My Skills</p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap:4 md:gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap:4 md:gap-6">
         {skills.map((skill, index) => (
           <ProgressBar
             key={index}

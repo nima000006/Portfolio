@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import FooterSideBar from "./FooterSideBar";
-import { FaBuilding, FaMailBulk, FaMobile, FaPhone } from "react-icons/fa";
+import {  FaMailBulk, FaMobile } from "react-icons/fa";
 
 const ContactForm = () => {
   const {
@@ -16,13 +16,11 @@ const ContactForm = () => {
 
   return (
     <div className="bg-gray-900 text-white py-10 px-6">
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-4 p-6  z-20">
+      <div className="grid grid-cols-1 md:grid-cols-6 gap-4 p-6  z-20">
         {/* Address Section */}
         <div className="col-span-2 z-20">
           <h3 className="text-lg font-semibold mb-4">ADDRESS</h3>
-          <p>4th Floor, Plot No.22,</p>
-          <p>145 Murphy Canyon Rd.</p>
-          <p>San Diego CA 2028</p>
+          <p> Iran, Tehran, Ekbatan Complex, Block B4, Entrance 13, No. 418</p>
           <p className="mt-4">
             <a href="tel:00989194273578">
               <span className="inline-block text-theme">
@@ -31,7 +29,6 @@ const ContactForm = () => {
               (+98)9194273578
             </a>
           </p>
-
           <p className="mt-4">
             <a href="mailto:nimachehreh690@gmail.com ">
               <span className="inline-block text-theme">
@@ -48,7 +45,7 @@ const ContactForm = () => {
         </div>
 
         {/* Form Section */}
-        <div className="col-span-3 z-20">
+        <div className="col-span-4 z-20">
           <h3 className="text-lg font-semibold mb-4">SEND US A NOTE</h3>
           <form
             onSubmit={handleSubmit(onSubmit)}
@@ -113,7 +110,7 @@ const ContactForm = () => {
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full bg-theme text-white py-2 rounded-lg hover:bg-theme transition duration-300"
+              className="p-2 bg-theme text-white py-2 rounded-lg hover:bg-theme transition duration-300"
             >
               Send Message
             </button>

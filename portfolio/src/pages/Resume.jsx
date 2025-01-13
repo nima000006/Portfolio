@@ -9,7 +9,7 @@ function Resume() {
   return (
     <div className="relative bg-slate-900 w-full px-10 pb-10">
       <DynamicTitle title={"Resume"} backText={"SUMMMARY"} />
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 p-6 mt-12 z-20 relative">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 p-6 mt-12 z-20 relative">
         <BoxResume title="My Experience">
           <ChildBoxResume
             date={"2020 - 2024"}

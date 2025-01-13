@@ -4,7 +4,7 @@ import Gallery from "../component/FilterableGallery"
 
 function Portfolio() {
     return (
-      <div className="relative bg-slate-900 min-h-screen w-full ">
+      <div className="relative bg-slate-900 min-h-screen h-full w-full ">
         <DynamicTitle title={"My Work"} backText={"PORTFOLIO"} />
         <div className="mt-10 z-20 relative">
           <Gallery />

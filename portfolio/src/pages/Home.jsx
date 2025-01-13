@@ -6,10 +6,8 @@ import { createPortal } from "react-dom";
 function Home() {
   return (
     <div className="relative bg-hero-pattern-home bg-cover bg-center bg-no-repeat h-full w-full flex flex-col items-center justify-center">
-      {/* Semi-transparent Grey Overlay */}
       <div className="absolute inset-0 bg-slate-900 opacity-80 z-10"></div>
       <p className="text-gray-300 z-20 font-bold text-3xl mb-16">Welcome</p>
-      {/* Typewriter Effect */}
       <div className="relative z-20 text-gray-300 font-bold text-6xl">
         <Typewriter
           onInit={(typewriter) => {
