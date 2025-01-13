@@ -1,6 +1,8 @@
 import { useForm } from "react-hook-form";
 import FooterSideBar from "./FooterSideBar";
-import {  FaMailBulk, FaMobile } from "react-icons/fa";
+import { FaMailBulk, FaMobile } from "react-icons/fa";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ContactForm = () => {
   const {
@@ -9,9 +11,8 @@ const ContactForm = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log("Form Data:", data);
-    alert("Message sent successfully!");
+  const onSubmit = () => {
+    toast.success("Message sent successfully!");
   };
 
   return (

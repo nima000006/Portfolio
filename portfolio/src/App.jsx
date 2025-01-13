@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router";
 import { Suspense, lazy } from "react";
 import SpinnerFullPage from "./component/SpinnerFullPage";
+import { ToastContainer } from "react-toastify";
 
 const Home = lazy(() => import("./pages/Home"));
 const About = lazy(() => import("./pages/About"));
@@ -15,6 +16,7 @@ const PageNotFound = lazy(() => import("./pages/PageNotFound"));
 function App() {
   return (
     <>
+      <ToastContainer />
 
       <Suspense fallback={<SpinnerFullPage />}>
         <Routes>
