@@ -1,5 +1,15 @@
+import AnimateNextPage from "../component/AnimateNextPage";
+import TestimonialSlider from "../component/CustomerSwiper";
+import DynamicTitle from "../component/DynamicTitle";
+
 function Testimonial() {
-    return <div>Testimonial</div>;
+  return (
+    <div className="relative bg-slate-900 min-h-screen w-full px-10 pb-10">
+      <DynamicTitle title={"Client Speak"} backText={"TESTIMONIAL"} />
+      <TestimonialSlider />
+      <AnimateNextPage href={"/contact"} />
+    </div>
+  );
 }
 
-export default Testimonial
+export default Testimonial;

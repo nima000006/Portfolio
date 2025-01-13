@@ -49,7 +49,7 @@ function WhatIdo() {
   return (
     <div className="relative bg-slate-900  w-full px-10">
       <DynamicTitle backText={"SERVICES"} title={"What I Do?"} />
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 p-6 mt-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 p-6 mt-12 z-20 relative">
         {skills.map((item) => (
           <Skills
             key={item.title}
@@ -58,7 +58,7 @@ function WhatIdo() {
             icon={item.icon}
           />
         ))}
-              <AnimateNextPage href={"/resume"}/>
+        <AnimateNextPage href={"/resume"} />
       </div>
     </div>
   );

@@ -1,0 +1,8 @@
+.spinnerFullpage {
+  height: calc(100vh - 5rem);
+  background-color: #1a1919;
+
+  width: 100%;
+  height: 100%;
+
+}

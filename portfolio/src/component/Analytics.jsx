@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 function Analytics({ number, title }) {
   return (
     <div className="whitespace-nowrap text-center text-slate-500 flex flex-col justify-center items-center border-r border-dashed border-r-slate-500 last:border-none">

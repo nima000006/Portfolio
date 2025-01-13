@@ -1,9 +1,14 @@
+/* eslint-disable react/prop-types */
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
-function FooterSideBar() {
+function FooterSideBar({ start }) {
   return (
-    <ul className="flex justify-center w-full space-x-4 mt-5">
+    <ul
+      className={`flex ${
+        start ? "justify-start" : "justify-center"
+      }  w-full space-x-4 mt-5`}
+    >
       {/* LinkedIn Icon */}
       <li className="group relative">
         <a
