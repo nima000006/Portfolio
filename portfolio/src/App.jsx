@@ -1,7 +1,6 @@
 import { Route, Routes } from "react-router";
 import { Suspense, lazy } from "react";
 import SpinnerFullPage from "./component/SpinnerFullPage";
-import MusicPlayer from "./component/MusicPlayer";
 
 const Home = lazy(() => import("./pages/Home"));
 const About = lazy(() => import("./pages/About"));
@@ -16,7 +15,6 @@ const PageNotFound = lazy(() => import("./pages/PageNotFound"));
 function App() {
   return (
     <>
-      <MusicPlayer />
 
       <Suspense fallback={<SpinnerFullPage />}>
         <Routes>
