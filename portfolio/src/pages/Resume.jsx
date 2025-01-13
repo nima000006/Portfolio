@@ -32,12 +32,13 @@ function Resume() {
         </BoxResume>
       </div>
       <SkillsProgressBar />
-      <button
-        type="button"
-        className="text-slate-300  z-20 relative border border-slate-300 transition-all duration-300 hover:bg-slate-800 hover:border-slate-800 p-3 font-medium flex flex-nowrap rounded-3xl items-center"
+          <a
+              target="_blank"
+        href="https://dsaenmqzgnuhscrxqsoh.supabase.co/storage/v1/object/public/CV/nima-chehreh-latest-CV.pdf?t=2025-01-13T20%3A44%3A05.821Z"
+        className="text-slate-300 w-fit z-20 relative border border-slate-300 transition-all duration-300 hover:bg-slate-800 hover:border-slate-800 p-3 font-medium flex flex-nowrap rounded-3xl items-center"
       >
         Download CV <FaDownload className="mx-2" />
-      </button>
+      </a>
       <AnimateNextPage href={"/portfolio"} />
     </div>
   );

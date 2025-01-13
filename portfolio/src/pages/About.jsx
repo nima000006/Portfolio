@@ -60,12 +60,13 @@ function About() {
               From: Tehran, Iran
             </li>
           </ul>
-          <button
-            type="button"
-            className="bg-theme text-green-100 p-3 rounded-3xl flex justify-center items-center"
+          <a
+            target="_blank"
+            href="https://dsaenmqzgnuhscrxqsoh.supabase.co/storage/v1/object/public/CV/nima-chehreh-latest-CV.pdf?t=2025-01-13T20%3A44%3A05.821Z"
+            className="bg-theme text-green-100 w-fit p-3 rounded-3xl flex justify-center items-center"
           >
             Download CV
-          </button>
+          </a>
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6 ">
