@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router";
 import { Suspense, lazy } from "react";
 import SpinnerFullPage from "./component/SpinnerFullPage";
+import MusicPlayer from "./component/MusicPlayer";
 
 const Home = lazy(() => import("./pages/Home"));
 const About = lazy(() => import("./pages/About"));
@@ -14,20 +15,24 @@ const PageNotFound = lazy(() => import("./pages/PageNotFound"));
 
 function App() {
   return (
-    <Suspense fallback={<SpinnerFullPage />}>
-      <Routes>
-        <Route path="/" element={<AppLayout />}>
-          <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="lists-skills" element={<WhatIdo />} />
-          <Route path="resume" element={<Resume />} />
-          <Route path="portfolio" element={<Portfolio />} />
-          <Route path="testimonial" element={<Testimonial />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="*" element={<PageNotFound />} />
-        </Route>
-      </Routes>
-    </Suspense>
+    <>
+      <MusicPlayer />
+
+      <Suspense fallback={<SpinnerFullPage />}>
+        <Routes>
+          <Route path="/" element={<AppLayout />}>
+            <Route index element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="lists-skills" element={<WhatIdo />} />
+            <Route path="resume" element={<Resume />} />
+            <Route path="portfolio" element={<Portfolio />} />
+            <Route path="testimonial" element={<Testimonial />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="*" element={<PageNotFound />} />
+          </Route>
+        </Routes>
+      </Suspense>
+    </>
   );
 }
 
