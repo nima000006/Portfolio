@@ -33,9 +33,9 @@ function SlideBar() {
 
         {/* Sidebar */}
         <nav
-          className={`fixed top-0 p-4 left-0 lg:left-auto h-full w-full bg-gray-800 text-gray-300 font-semibold p-4 z-40 transition-transform duration-300 ${
+          className={`fixed top-0 left-0 lg:left-auto h-full w-full bg-gray-800 text-gray-300 font-semibold p-4 z-40 transition-transform duration-300 ${
             isOpen ? "translate-x-0" : "-translate-x-full"
-          } lg:translate-x-0 lg:relative w-[70%] lg:w-64`}
+          } lg:translate-x-0 lg:relative w-[300px] lg:w-64`}
           
         >
           <ul className="flex flex-col items-center">

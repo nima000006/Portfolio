@@ -43,7 +43,7 @@ const skills = [
 
 function WhatIdo() {
   return (
-    <div className="relative bg-slate-900  w-full px-10">
+    <div className="relative bg-slate-900  w-full px-3 lg:px-10">
       <DynamicTitle backText={"SERVICES"} title={"What I Do?"} />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 p-6 mt-12 z-20 relative">
         {skills.map((item) => (

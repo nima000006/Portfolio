@@ -15,7 +15,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="bg-gray-900 text-white py-10 px-6">
+    <div className="bg-gray-900 text-white py-10 px-2 lg:px-6">
       <div className="grid grid-cols-1 md:grid-cols-6 gap-4 p-6  z-20">
         {/* Address Section */}
         <div className="col-span-2 z-20">

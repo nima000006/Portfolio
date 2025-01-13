@@ -10,7 +10,7 @@ const analytics = [
 ];
 function About() {
   return (
-    <div className="relative bg-slate-900  w-full min-h-screen  px-10">
+    <div className="relative bg-slate-900  w-full min-h-screen px-4 lg:px-10">
       <DynamicTitle backText={"ABOUT ME"} title={"Know Me More"} />
       <div className="grid grid-cols-1 md:grid-cols-5 gap-4 p-6 mt-16 z-20">
         <div className="col-span-3 z-20">
