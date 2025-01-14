@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router";
 
 const sampleData = [
   {
@@ -84,7 +85,7 @@ function FilterableGallery() {
               exit={{ scale: 0.8, opacity: 0 }}
               transition={{ duration: 0.4 }}
             >
-              <a href={item.href}>
+              <Link to={item.href}>
                 <img
                   src={item.image}
                   alt={item.title}
@@ -96,7 +97,7 @@ function FilterableGallery() {
                   </h3>
                   <p className="text-gray-300">{item.category}</p>
                 </div>
-              </a>
+              </Link>
             </motion.div>
           ))}
         </AnimatePresence>
